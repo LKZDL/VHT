@@ -1,0 +1,285 @@
+body{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/background-de-thuong-trai-tim-tren-nen-trang.jpg);
+    
+}
+.test{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px red;
+}
+.test::before{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px red;
+    content: '';
+    top: 0;
+    left: -50%;
+    border-radius: 50%;
+}
+.test::after{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px red;
+    content: '';
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+}
+.test1{
+    position: absolute;
+    animation: di 3s forwards;
+    animation-delay: 0.5s;
+
+    
+}
+@keyframes di{
+    0%{
+        top: 50%;
+        left: 45%;
+    }
+    50%{
+        top: 77%;
+        left: 45%;
+    }
+    100%{
+        top: 77%;
+        left: 6%;
+    }
+}
+.cai1{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px red;
+}
+.cai1::before{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px red;
+    content: '';
+    top: 0;
+    left: -50%;
+    border-radius: 50%;
+}
+.cai1::after{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px red;
+    content: '';
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+}
+.cai2{
+    position: absolute;
+    animation: di1 3s forwards;
+    animation-delay: 0.5s;
+
+}
+@keyframes di1{
+    0%{
+        top: 50%;
+        left: 45%;
+    }
+    50%{
+        top: 77%;
+        left: 45%;
+    }
+    100%{
+        top: 77%;
+        left: 86%;
+    }
+}
+.HT{
+    position: absolute;
+    opacity: 0;
+    animation: HT 3s forwards;
+    animation-delay: 3s;
+    
+}
+@keyframes HT{
+    0%{
+        opacity: 0;
+        top: 5%;
+        left: 36%;
+    }
+    20%{
+        opacity: 1;
+        top: 8%;
+        left: 36%;
+    }
+    95%{
+        opacity: 1;
+        top: 8%;
+        left: 36%;
+    }
+    100%{
+        opacity: 0;
+        top: 8%;
+        left: 36%;
+    }
+}
+.chu1{
+    color: rgb(11, 19, 92);
+    font-size: 220%;
+    animation: chu1 3s forwards;
+    animation-delay: 2.5s;
+    position: absolute;
+    opacity: 0;
+}
+@keyframes chu1{
+    0%{
+        opacity: 0;
+        top: 1%;
+    }
+    20%{
+        opacity: 1;
+        top: 47%;
+    }
+    95%{
+        opacity: 1;
+        top: 47%;
+    }
+    100%{
+        opacity: 0;
+        top: 47%;
+    }
+}
+.chi2{
+    position: absolute;
+    opacity: 0;
+    animation: chi2 6s forwards;
+    animation-delay: 7s;
+}
+@keyframes chi2{
+    0%{
+        opacity: 0;
+        top: 8%;
+        left: 100%;
+    }
+    10%{
+        opacity: 1;
+        top: 8%;
+        left: 31%;
+    }
+    94%{
+        opacity: 1;
+        top: 8%;
+        left: 31%;
+    }
+    100%{
+        opacity: 0;
+        top: 8%;
+        left: -100%;
+    }
+}
+.web{
+    font-size: 235%;
+    text-align: center;
+    
+    color: rgb(8, 18, 70);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    animation: chuweb 5s forwards;
+    animation-delay: 7.5s;
+    opacity: 0;
+}
+@keyframes chuweb {
+    0%{
+        opacity: 0;
+        margin-top: 15%; 
+        margin-left: 0%;
+        margin-right: 25%;
+    }
+    10%{
+        opacity: 1;
+        margin-top: 15%; 
+        margin-left: 25%;
+        margin-right: 25%; 
+        
+    }
+    90%{
+        opacity: 1;
+        margin-top: 15%; 
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    100%{
+        opacity: 0;
+        margin-top: 15%; 
+        margin-left: 25%;
+        margin-right: 0%;    
+        
+    }
+}
+.tk{
+    font-size: 255%;
+    text-align: center;
+    color: brown;
+    animation: tk 7s forwards;
+    animation-delay: 14s;
+    opacity: 0;
+}
+@keyframes tk {
+    0%{
+        opacity: 0;
+        top: 100%;
+    }
+    10%{
+        opacity: 1;
+        top: 48%;
+    }
+    90%{
+        opacity: 1;
+        top: 48%;
+    }
+    100%{
+        opacity: 0;
+        top: 48%;
+    }
+}
+.end{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    position: absolute;
+    animation: end 3s forwards;
+    animation-delay: 20s;
+    border-radius: 50%;
+    opacity: 0;
+}
+@keyframes end {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(100);
+    }
+    
+}
